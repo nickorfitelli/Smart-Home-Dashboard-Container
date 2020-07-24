@@ -1,6 +1,7 @@
-# Smart Home Dashboard
+# Smart Home Dashboard :iphone:
 
 This is a smart home dashboard component that will be a piece of a greater "Family Management Application".
+
 
 ## Installation
 
