@@ -33,3 +33,8 @@ This is a smart home dashboard component that will be a piece of a greater "Fami
 
 `DELETE`
 
+# Mockup
+
+
+![Image of Proto](https://github.com/flash548/budget-tracker/blob/master/mock.png)
+
