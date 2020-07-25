@@ -3,28 +3,25 @@
 This is a smart home dashboard component that will be a piece of a greater "Family Management Application".
 
 
-## Installation
+## App Features
+1) 
+2) 
+3) 
+4) 
+5) 
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+## User Stories
+:exclamation:-
+:exclamation:-
+:exclamation:-
+:exclamation:-
+:exclamation:-
+:exclamation:-
 
-```bash
-pip install foobar
-```
+## Data Endpoints
+All endpoints require an `authentication token` provided by your mobile tracking device upon registration. They must be passed in as a parameter for all endpoints as `?auth=XXXXXXX`
 
-## Usage
-
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+`GET `  
+`POST `
+`PATCH`
+`DELETE`
