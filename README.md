@@ -1,12 +1,12 @@
 # Smart Home Dashboard :iphone:
 
-This is a smart home dashboard component that will be a piece of a greater "Family Management Application".
+This is a smart home dashboard component that will be a piece of a greater "Family Management Application". It allows you to manage your smart home devices with an easy to use dashboard.
 
 
 ## App Features
-1) 
-2) 
-3) 
+1) Add/Remove smart home devices to the dashboard
+2) Turn on/off your smart devices
+3) Schedule when your devices turn on and off
 4) 
 5) 
 
