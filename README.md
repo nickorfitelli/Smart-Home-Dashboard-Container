@@ -25,6 +25,9 @@ This is a smart home dashboard component that will be a piece of a greater "Fami
 
 ## ERD
 
+![Image of Erd](https://github.com/nickorfitelli/Smart-Home-Dashboard-Container/blob/master/erd.png)
+
+
 ## Data Endpoints
 
 `GET/device `- Get all smart home devices
