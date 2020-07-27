@@ -23,6 +23,8 @@ This is a smart home dashboard component that will be a piece of a greater "Fami
 
 :exclamation:-As a user, I want to be able to schedule when my smart devices turn on/off
 
+## ERD
+
 ## Data Endpoints
 
 `GET `
