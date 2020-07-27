@@ -27,13 +27,21 @@ This is a smart home dashboard component that will be a piece of a greater "Fami
 
 ## Data Endpoints
 
-`GET `
+`GET/device `- Get all smart home devices
 
-`POST `
+`POST/device `- Add new deivce to system
 
-`PATCH`
+`PATCH/device`- Update smart device information
 
-`DELETE`
+`DELETE/device`- Delete smart device from system
+
+`GET/schedule ` Get all scheduled device information
+
+`POST/schedule` Add new scheduled device to calendar
+
+`PATCH/schedule`- Update scehduled device
+
+`DELETE/schedule`- Delete scheduled device
 
 # Mockup
 
