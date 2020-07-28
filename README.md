@@ -32,7 +32,15 @@ This is a smart home dashboard component that will be a piece of a greater "Fami
 
 `GET/device `- Get all smart home devices
 
-`POST/device `- Add new deivce to system
+`POST/device `- Add new deivce to system 
+
+```
+{
+"device_name": "Bedroom",
+"device_type": "Facebook Portal",
+"state": "True"
+}
+```
 
 `PATCH/device`- Update smart device information
 
