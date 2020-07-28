@@ -15,7 +15,7 @@ This is a smart home dashboard component that will be a piece of a greater "Fami
 
 :heavy_check_mark:-As a user, I want to be able to add a new smart device
 
-:exclamation:-As a user, I want to be able to edit a smart device
+:heavy_check_mark:-As a user, I want to be able to edit a smart device
 
 :exclamation:-As a user, I want to be able to turn on/off a particular smart device
 
