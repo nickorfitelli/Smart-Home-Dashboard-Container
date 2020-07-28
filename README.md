@@ -7,8 +7,7 @@ This is a smart home dashboard component that will be a piece of a greater "Fami
 1) Add/Remove smart home devices to the dashboard
 2) Turn on/off your smart devices
 3) Schedule when your devices turn on and off
-4) 
-5) 
+4) View Schedule
 
 ## User Stories
 :heavy_check_mark:-As a user, I want to be able to see all of my connected smart devices
@@ -43,9 +42,18 @@ This is a smart home dashboard component that will be a piece of a greater "Fami
 }
 ```
 
-`PATCH/device`- Update smart device information
+`PATCH/device/{deviceid}`- Update smart device information
 
-`DELETE/device`- Delete smart device from system
+```
+@RequestBody
+{
+"device_name": "Bedroom",
+"device_type": "Facebook Portal",
+"state": "True"
+}
+```
+
+`DELETE/device/delete?deviceid=1`- Delete smart device from system
 
 `GET/schedule ` Get all scheduled device information
 
