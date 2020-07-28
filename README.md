@@ -29,7 +29,7 @@ This is a smart home dashboard component that will be a piece of a greater "Fami
 
 ## Data Endpoints
 
-#Device
+### Device
 
 `GET/device `- Get all smart home devices
 
@@ -59,7 +59,7 @@ This is a smart home dashboard component that will be a piece of a greater "Fami
 
 `DELETE/device/delete?deviceid=1`- Delete smart device from system
 
-#Schedule
+### Schedule
 
 `GET/schedule ` Get all scheduled device information
 
