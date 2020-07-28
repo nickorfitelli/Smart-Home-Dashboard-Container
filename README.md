@@ -53,6 +53,8 @@ This is a smart home dashboard component that will be a piece of a greater "Fami
 }
 ```
 
+`PATCH/device/power?state=on&id=1`- Update scehduled device
+
 `DELETE/device/delete?deviceid=1`- Delete smart device from system
 
 `GET/schedule ` Get all scheduled device information
