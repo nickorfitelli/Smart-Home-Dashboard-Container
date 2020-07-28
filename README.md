@@ -11,7 +11,7 @@ This is a smart home dashboard component that will be a piece of a greater "Fami
 5) 
 
 ## User Stories
-:exclamation:-As a user, I want to be able to see all of my connected smart devices
+:heavy_check_mark:-As a user, I want to be able to see all of my connected smart devices
 
 :exclamation:-As a user, I want to be able to add a new smart device
 
