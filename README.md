@@ -20,7 +20,7 @@ This is a smart home dashboard component that will be a piece of a greater "Fami
 
 :heavy_check_mark:-As a user, I want to be able to remove a smart device
 
-:exclamation:-As a user, I want to be able to schedule when my smart devices turn on/off
+:heavy_check_mark:-As a user, I want to be able to schedule when my smart devices turn on/off
 
 ## ERD
 
@@ -59,11 +59,31 @@ This is a smart home dashboard component that will be a piece of a greater "Fami
 
 `GET/schedule ` Get all scheduled device information
 
-`POST/schedule` Add new scheduled device to calendar
+`POST/schedule/{id}` Add new schedule to device with {id} (device id)
 
-`PATCH/schedule`- Update scehduled device
+```
+{
+    "start_date": "08-03-2020",
+    "end_date": "08-03-2020",
+    "start_time": "12:30",
+    "end_time": "13:30",
+    "reoccurance": "false"
+}
+```
 
-`DELETE/schedule`- Delete scheduled device
+`PATCH/schedule/{id}`- Update schedule with {id} (schedule id)
+
+```
+{
+    "start_date": "07-03-2020",
+    "end_date": "09-03-2020",
+    "start_time": "11:30",
+    "end_time": "16:30",
+    "reoccurance": "true"
+}
+```
+
+`DELETE/schedule/{id}`- Delete schedule with {id} (schedule id)
 
 # Mockup
 
