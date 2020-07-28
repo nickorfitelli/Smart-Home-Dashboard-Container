@@ -13,7 +13,7 @@ This is a smart home dashboard component that will be a piece of a greater "Fami
 ## User Stories
 :heavy_check_mark:-As a user, I want to be able to see all of my connected smart devices
 
-:exclamation:-As a user, I want to be able to add a new smart device
+:heavy_check_mark:-As a user, I want to be able to add a new smart device
 
 :exclamation:-As a user, I want to be able to edit a smart device
 
