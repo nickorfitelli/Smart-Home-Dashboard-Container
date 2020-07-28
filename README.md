@@ -2,6 +2,8 @@
 
 This is a smart home dashboard component that will be a piece of a greater "Family Management Application". It allows you to manage your smart home devices with an easy to use dashboard.
 
+https://img.shields.io/github/last-commit/nickorfitelli/Smart-Home-Dashboard-Container?style=plastic
+
 
 ## App Features
 1) Add/Remove smart home devices to the dashboard
