@@ -35,6 +35,7 @@ This is a smart home dashboard component that will be a piece of a greater "Fami
 `POST/device `- Add new deivce to system 
 
 ```
+@RequestBody
 {
 "device_name": "Bedroom",
 "device_type": "Facebook Portal",
