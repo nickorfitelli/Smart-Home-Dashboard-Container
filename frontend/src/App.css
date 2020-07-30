@@ -51,12 +51,13 @@
 }
 
 .cardholder {
-  height: 90%;
+  height: 115%;
   margin: .5%;
   padding: 8px;
 	grid-area: cardholder;
 	background-color: lightgray;
 	overflow: auto;
+	display: inline-block;
 	
 	
 	

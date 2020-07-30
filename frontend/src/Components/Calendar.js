@@ -68,10 +68,10 @@ function stableSort(array, comparator) {
 
 const headCells = [
   { id: 'name', numeric: false, disablePadding: true, label: 'Smart Device' },
-  { id: 'calories', numeric: false, disablePadding: false, label: 'Start Date' },
-  { id: 'fat', numeric: false, disablePadding: false, label: 'Start Time' },
-  { id: 'carbs', numeric: false, disablePadding: false, label: 'End Date' },
-  { id: 'protein', numeric: false, disablePadding: false, label: 'End Time' },
+  { id: 'startdate', numeric: false, disablePadding: false, label: 'Start Date' },
+  { id: 'starttime', numeric: false, disablePadding: false, label: 'Start Time' },
+  { id: 'enddate', numeric: false, disablePadding: false, label: 'End Date' },
+  { id: 'endtime', numeric: false, disablePadding: false, label: 'End Time' },
 ];
 
 function EnhancedTableHead(props) {
@@ -88,7 +88,7 @@ function EnhancedTableHead(props) {
             indeterminate={numSelected > 0 && numSelected < rowCount}
             checked={rowCount > 0 && numSelected === rowCount}
             onChange={onSelectAllClick}
-            inputProps={{ 'aria-label': 'select all desserts' }}
+            inputProps={{ 'aria-label': 'select all' }}
           />
         </TableCell>
         {headCells.map((headCell) => (
@@ -197,14 +197,15 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(2),
   },
   table: {
-    minWidth: 750,
+    textAlign: 'center',
+    maxWidth: 500,
   },
   visuallyHidden: {
     border: 0,
     clip: 'rect(0 0 0 0)',
     height: 1,
     margin: -1,
-    overflow: 'hidden',
+    overflow: 'auto',
     padding: 0,
     position: 'absolute',
     top: 20,
