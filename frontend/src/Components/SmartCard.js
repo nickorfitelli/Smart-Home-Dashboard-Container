@@ -5,14 +5,14 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import Switch from "@material-ui/core/Switch";
 
 const useStyles = makeStyles({
 	root: {
-        minWidth: "25%",
+		minWidth: "25%",
 		display: "inline-block",
 		margin: "2%",
-        textAlign: "center"
-        
+		textAlign: "center",
 	},
 	bullet: {
 		display: "inline-block",
@@ -27,8 +27,17 @@ const useStyles = makeStyles({
 	},
 });
 
-export default function OutlinedCard() {
+export default function OutlinedCard(props) {
 	const classes = useStyles();
+
+	const [state, setState] = React.useState({
+		checkedA: true,
+		checkedB: true,
+	});
+
+	const handleChange = (event) => {
+		setState({ ...state, [event.target.name]: event.target.checked });
+	};
 
 	return (
 		<div>
@@ -39,197 +48,20 @@ export default function OutlinedCard() {
 						color="textSecondary"
 						gutterBottom
 					>
-						Smart Device Name
+						{props.type}
 					</Typography>
 
 					<Typography className={classes.pos} color="textSecondary">
-						Smart Device Type
+						{props.name}
 					</Typography>
 				</CardContent>
-				<CardActions>
-					<Button size="small" variant="contained" color="primary">
-						Schedule
-					</Button>
-					<Button size="small" variant="contained" color="secondary">
-						Remove
-					</Button>
-				</CardActions>
-			</Card>
-            <Card className={classes.root} variant="outlined">
-				<CardContent>
-					<Typography
-						className={classes.title}
-						color="textSecondary"
-						gutterBottom
-					>
-						Smart Device Name
-					</Typography>
-
-					<Typography className={classes.pos} color="textSecondary">
-						Smart Device Type
-					</Typography>
-				</CardContent>
-				<CardActions>
-					<Button size="small" variant="contained" color="primary">
-						Schedule
-					</Button>
-					<Button size="small" variant="contained" color="secondary">
-						Remove
-					</Button>
-				</CardActions>
-			</Card>
-            <Card className={classes.root} variant="outlined">
-				<CardContent>
-					<Typography
-						className={classes.title}
-						color="textSecondary"
-						gutterBottom
-					>
-						Smart Device Name
-					</Typography>
-
-					<Typography className={classes.pos} color="textSecondary">
-						Smart Device Type
-					</Typography>
-				</CardContent>
-				<CardActions>
-					<Button size="small" variant="contained" color="primary">
-						Schedule
-					</Button>
-					<Button size="small" variant="contained" color="secondary">
-						Remove
-					</Button>
-				</CardActions>
-			</Card>
-            <Card className={classes.root} variant="outlined">
-				<CardContent>
-					<Typography
-						className={classes.title}
-						color="textSecondary"
-						gutterBottom
-					>
-						Smart Device Name
-					</Typography>
-
-					<Typography className={classes.pos} color="textSecondary">
-						Smart Device Type
-					</Typography>
-				</CardContent>
-				<CardActions>
-					<Button size="small" variant="contained" color="primary">
-						Schedule
-					</Button>
-					<Button size="small" variant="contained" color="secondary">
-						Remove
-					</Button>
-				</CardActions>
-			</Card>
-            <Card className={classes.root} variant="outlined">
-				<CardContent>
-					<Typography
-						className={classes.title}
-						color="textSecondary"
-						gutterBottom
-					>
-						Smart Device Name
-					</Typography>
-
-					<Typography className={classes.pos} color="textSecondary">
-						Smart Device Type
-					</Typography>
-				</CardContent>
-				<CardActions>
-					<Button size="small" variant="contained" color="primary">
-						Schedule
-					</Button>
-					<Button size="small" variant="contained" color="secondary">
-						Remove
-					</Button>
-				</CardActions>
-			</Card>
-            <Card className={classes.root} variant="outlined">
-				<CardContent>
-					<Typography
-						className={classes.title}
-						color="textSecondary"
-						gutterBottom
-					>
-						Smart Device Name
-					</Typography>
-
-					<Typography className={classes.pos} color="textSecondary">
-						Smart Device Type
-					</Typography>
-				</CardContent>
-				<CardActions>
-					<Button size="small" variant="contained" color="primary">
-						Schedule
-					</Button>
-					<Button size="small" variant="contained" color="secondary">
-						Remove
-					</Button>
-				</CardActions>
-			</Card>
-            <Card className={classes.root} variant="outlined">
-				<CardContent>
-					<Typography
-						className={classes.title}
-						color="textSecondary"
-						gutterBottom
-					>
-						Smart Device Name
-					</Typography>
-
-					<Typography className={classes.pos} color="textSecondary">
-						Smart Device Type
-					</Typography>
-				</CardContent>
-				<CardActions>
-					<Button size="small" variant="contained" color="primary">
-						Schedule
-					</Button>
-					<Button size="small" variant="contained" color="secondary">
-						Remove
-					</Button>
-				</CardActions>
-			</Card>
-            <Card className={classes.root} variant="outlined">
-				<CardContent>
-					<Typography
-						className={classes.title}
-						color="textSecondary"
-						gutterBottom
-					>
-						Smart Device Name
-					</Typography>
-
-					<Typography className={classes.pos} color="textSecondary">
-						Smart Device Type
-					</Typography>
-				</CardContent>
-				<CardActions>
-					<Button size="small" variant="contained" color="primary">
-						Schedule
-					</Button>
-					<Button size="small" variant="contained" color="secondary">
-						Remove
-					</Button>
-				</CardActions>
-			</Card>
-            <Card className={classes.root} variant="outlined">
-				<CardContent>
-					<Typography
-						className={classes.title}
-						color="textSecondary"
-						gutterBottom
-					>
-						Smart Device Name
-					</Typography>
-
-					<Typography className={classes.pos} color="textSecondary">
-						Smart Device Type
-					</Typography>
-				</CardContent>
+				<Switch
+					checked={state.checkedB}
+					onChange={handleChange}
+					color="primary"
+					name="checkedB"
+					inputProps={{ "aria-label": "primary checkbox" }}
+				/>
 				<CardActions>
 					<Button size="small" variant="contained" color="primary">
 						Schedule
