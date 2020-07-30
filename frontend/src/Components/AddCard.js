@@ -2,7 +2,7 @@ import React from "react";
 import SmartCard from "./SmartCard";
 import axios from "axios";
 
-export default class AddDevice extends React.Component {
+export default class AddCard extends React.Component {
 	state = {
 		devices: [],
 	};

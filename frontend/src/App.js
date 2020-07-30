@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import SmartCard from "./Components/SmartCard";
 import Calendar from "./Components/Calendar";
-import AddDevice from "./Components/AddDevice";
+import AddCard from "./Components/AddCard";
+import AddSchedule from "./Components/AddSchedule";
 
 function App() {
 
@@ -11,10 +11,7 @@ function App() {
 		<div style={{ width: "100%" }}>
 			<div class="grid-container">
 				<div class="cardholder">
-					<AddDevice />
-					
-
-					
+					<AddCard />			
 				</div>
 
 				<div class="schedule">
