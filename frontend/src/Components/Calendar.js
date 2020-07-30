@@ -203,12 +203,9 @@ const useStyles = makeStyles((theme) => ({
     border: 0,
     clip: 'rect(0 0 0 0)',
     height: 1,
-    margin: -1,
-    overflow: 'hidden',
-    padding: 0,
-    position: 'absolute',
-    top: 20,
-    width: 1,
+    margin: "1%",
+    overflow: 'auto',
+    textAlign: "right"
   },
 }));
 
@@ -319,10 +316,10 @@ export default function EnhancedTable() {
                       <TableCell component="th" id={labelId} scope="row" padding="none">
                         {row.name}
                       </TableCell>
-                      <TableCell align="right">{row.calories}</TableCell>
-                      <TableCell align="right">{row.fat}</TableCell>
-                      <TableCell align="right">{row.carbs}</TableCell>
-                      <TableCell align="right">{row.protein}</TableCell>
+                      <TableCell align="left">{row.calories}</TableCell>
+                      <TableCell align="left">{row.fat}</TableCell>
+                      <TableCell align="left">{row.carbs}</TableCell>
+                      <TableCell align="left">{row.protein}</TableCell>
                     </TableRow>
                   );
                 })}
