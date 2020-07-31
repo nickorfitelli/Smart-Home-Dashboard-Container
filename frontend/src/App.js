@@ -36,7 +36,7 @@ function App() {
 					<Typography variant="h6" className={classes.title}>
 						Smart Device Dashboard
 					</Typography>
-					<Button color="inherit">Login</Button>
+					
 				</Toolbar>
 			</AppBar>
 			<div class="grid-container">
@@ -46,7 +46,7 @@ function App() {
 
 				<div class="schedule">
 					<Calendar />
-					<AddSchedule />
+					{/* <AddSchedule /> */}
 				</div>
 
 				<div class="controls">

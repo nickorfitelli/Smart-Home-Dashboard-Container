@@ -11,7 +11,7 @@ import {
 
 export default function MaterialUIPickers() {
   // The first commit of Material-UI
-  const [selectedDate, setSelectedDate] = React.useState(new Date('2020-08-18T21:11:54'));
+  const [selectedDate, setSelectedDate] = React.useState(new Date('2020-07-31T21:11:54'));
 
   const handleDateChange = (date) => {
     setSelectedDate(date);
