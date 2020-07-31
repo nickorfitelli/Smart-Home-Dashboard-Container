@@ -40,11 +40,9 @@
 .grid-container {
   margin: 1%;
   text-align: center;
-  
-  
   height: 500px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	
 	grid-template-rows: 1fr 1fr 1fr;
 	gap: 1px 1px;
 	grid-template-areas: "cardholder cardholder cardholder cardholder schedule schedule schedule" "cardholder cardholder cardholder cardholder schedule schedule schedule" "controls controls controls controls schedule schedule schedule";
@@ -55,9 +53,11 @@
   margin: .5%;
   padding: 8px;
 	grid-area: cardholder;
-	background-color: lightgray;
+	background-color: rgba(199, 191, 191, 0.329);
 	overflow: auto;
 	display: inline-block;
+	border-radius: 10px;
+	
 	
 	
 	
@@ -66,13 +66,26 @@
 .schedule {
   margin: .5%;
   grid-area: schedule;
+  overflow: auto;
+  
   
 }
 
 .controls {
 	
-  margin: .5%;
+  margin: 2%;
   grid-area: controls;
   text-align: right;
+  overflow: auto;
   
 }
+
+.line {
+	display: inline-block !important;
+	
+}
+
+::-webkit-scrollbar { 
+    display: none;  /* Chrome Safari */
+}
+  

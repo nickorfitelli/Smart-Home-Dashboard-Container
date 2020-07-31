@@ -25,8 +25,15 @@ function createData(name, calories, fat, carbs, protein) {
 }
 
 const rows = [
-  createData('Google Home', "01-05-20", "12:12", "01-07-20", "12:30"),
-   createData('Facebook Portal', "02-05-20", "12:12", "02-07-20", "12:30"),
+  createData('Phillips Hue', "08-05-20", "12:30", "08-05-20", "17:30"),
+   createData('Facebook Portal', "08-03-20", "12:01", "08-03-20", "12:30"),
+   createData('Amazon Echo', "08-05-20", "12:24", "08-05-20", "15:30"),
+   createData('Phillips Hue', "08-05-20", "15:12", "08-05-20", "18:30"),
+   createData('Phillips Hue', "09-05-20", "17:15", "09-05-20", "19:30"),
+   createData('Phillips Hue', "09-05-20", "12:12", "09-05-20", "12:30"),
+   createData('Facebook Portal', "12-25-20", "14:12", "12-25-20", "16:30"),
+   createData('Facebook Portal', "12-25-20", "08:12", "12-25-20", "12:30"),
+
   // createData('Eclair', 262, 16.0, 24, 6.0),
   // createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
   // createData('Gingerbread', 356, 16.0, 49, 3.9),
@@ -203,12 +210,9 @@ const useStyles = makeStyles((theme) => ({
     border: 0,
     clip: 'rect(0 0 0 0)',
     height: 1,
-    margin: -1,
-    overflow: 'hidden',
-    padding: 0,
-    position: 'absolute',
-    top: 20,
-    width: 1,
+    margin: "1%",
+    overflow: 'auto',
+    textAlign: "right"
   },
 }));
 
@@ -319,10 +323,10 @@ export default function EnhancedTable() {
                       <TableCell component="th" id={labelId} scope="row" padding="none">
                         {row.name}
                       </TableCell>
-                      <TableCell align="right">{row.calories}</TableCell>
-                      <TableCell align="right">{row.fat}</TableCell>
-                      <TableCell align="right">{row.carbs}</TableCell>
-                      <TableCell align="right">{row.protein}</TableCell>
+                      <TableCell align="left">{row.calories}</TableCell>
+                      <TableCell align="left">{row.fat}</TableCell>
+                      <TableCell align="left">{row.carbs}</TableCell>
+                      <TableCell align="left">{row.protein}</TableCell>
                     </TableRow>
                   );
                 })}

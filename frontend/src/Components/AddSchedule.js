@@ -18,7 +18,10 @@ export default class AddSchedule extends React.Component {
 		return (
 			<div display = "inline-block">
 				{this.state.schedule.map((schedule) => (
-					<SmartCard name = {schedule.device.device_name}> </SmartCard>
+					<li>
+                        {schedule.device.device_name} <br></br> Start Date: {schedule.start_date} Start Time: {schedule.start_time}<br></br>
+                        End Date: {schedule.end_date} End Time: {schedule.end_time}
+                    </li> 
 				))}
 			</div>
 		);
